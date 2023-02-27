@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Libreria Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Estilos propios CSS -->
+    <link rel="stylesheet" href="styles.css">
+   <!-- Icono-->
+    <link rel="icon" href="favicon.ico">
+    
+    <title>Carrito VGV</title>
+
+</head>
+<body>
+
+<header class="titlename">
+
+    <div class="container m-2">
+        <div class="row">
+          <div class="col-3">
+            <div id="fecha" class="whiteDate"></div>
+            <div id="hora" class="whiteDate"></div>
+          </div>
+        </div>
+    </div>
+
+    <h1 class="animate__animated animate__fadeIn">Vanina Gavatorta Valdez</h1>
+    <h2 class="animate__animated animate__fadeInRight">Dermatocosmiatra</h2>
+
+
+</header>
+
+<br>
+
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand whiteFont" href="#">Tratamientos</a>
+        
+        <div class="container text-center">
+            <div class="row row-cols-6">
+                <div class="col">
+                    <ul class="navbar-nav me-auto">
+                          <form class="d-flex">
+                            <input id="buscadorInputNav"class="form-control me-2" placeholder="Nombre" aria-label="Search">
+                            <button id="btnBuscar" class="btn btn-secondary">Buscar</button>
+                          </form> 
+                        </ul>
+                    </div>
+                <div class="col">
+                    <ul>
+                        <select id="selectOrdenar" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option selected>Ordenar por:</option>
+                          <option value="1">Mayor a menor</option>
+                          <option value="2">Menor a mayor</option>
+                          <option value="3">Alfabeticamente</option>
+                        </select>
+                    </ul>
+                    
+                </div>
+                <div class="col">
+                    <button id="darkMode" class="btn btn-secondary">DarkMode</button>
+                </div>
+                <div class="col">
+                    <button id="btnBonus" data-bs-toggle="modal" data-bs-target="#idModalBonus" type="button" class="btn btn-secondary">Bonus
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                        </svg>
+                    </button>
+                  </div>
+                <div class="col">
+                    <button id="registroUsuario" data-bs-toggle="modal" data-bs-target="#idModalAgregarPaciente" type="button" class="btn btn-secondary">Registrarse</button>
+                </div>
+                <div class="col">
+                    <button id="btnComprarCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" type="button" class="btn btn-secondary">Comprar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                          </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</nav>
+
+<br>
+
+<main class="mainindex">
+
+<!-- Loader (experiencia de usuario) -->
+<h3 id="textoLoader" class="text-success text-center">Cargando Tratamientos...</h3>
+<div id="loader" class="d-flex justify-content-center">
+    <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+
+<!-- Divs para buscador e impresion de cards de tratamientos -->
+<div class="container">
+    <div id="coincidencia"></div>
+    <div id="divTrats" class="row imgcard"></div>
+
+</div>
+
+
+<!-- Modal registro usuario nuevo -->
+<div class="modal fade" id="idModalAgregarPaciente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo Paciente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <form id="formNuevoPaciente">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="inputNombre" aria-describedby="nombre">
+              
+            </div>
+            <div class="mb-3">
+              <label for="edad" class="form-label">Edad</label>
+              <input type="text" class="form-control" id="inputEdad" aria-describedby="edad">
+              
+            </div>
+            <div class="mb-3">
+              <label for="eMail" class="form-label">Email</label>
+              <input type="text" class="form-control" id="inputEmail" aria-describedby="eMail">
+              
+            </div>
+          </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button id="btncolor" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="text" id="btnGuardarPaciente" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal carrito de compras -->
+<div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-bodyCarrito">
+          
+        </div>
+        <div class="row ml-ato">
+          <p id="precioTotal"></p>
+        </div>
+        <div class="modal-footer">
+          
+          
+          <button id="btncolor" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal bonus -->
+<div class="modal fade" id="idModalBonus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tips según tu edad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <form id="formNuevoPaciente">
+            <div class="mb-1">
+              <label for="nombre" class="form-label">Ingresa tu edad por favor</label>
+              <input type="text" class="form-control" id="inputEdadTips" aria-describedby="edad">
+              
+            </div>
+          </form>
+        </div>
+    
+        <div class="modal-footer">
+          <button id="btncolor" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="text" id="btnTips" class="btn btn-success" data-bs-dismiss="modal">Tip!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button onclick="location.href='https://web.whatsapp.com'"><img src="img/icono whatsapp cuadrado.png" alt="Icono de whatsapp" id="whatsapp"></button>
+    
+  </div>
+
+</main>
+
+<footer>
+
+        <p id="pfooter">Sitio desarrollado por Carolina GV web desing & style</p>
+        <p id="p2footer">Datos de contacto</p>
+        <p id="p3footer">Dirección: Pres. M. Quintana 174, Castelar, Bs.As.</p>
+        <p id="p4footer">E-mail: vaninagvdermatocosmiatra@gmail.com</p>
+        <p id="p5footer">Whatsapp: 1166628697</p>
+
+
+        <button class= "button" onclick="location.href='https://www.facebook.com/vanina.maquilladora?mibextid=ZbWKwL'"><img src="img/facebookIcon.png" alt="icono de facebook" class="icons faceicon"></button>
+        <button class= "button" onclick="location.href='https://instagram.com/vaninagvdermatocosmiatra?igshid=YmMyMTA2M2Y='"><img src="img/igpng.png" alt="Icono de Instagram" class="icons igicon"></button>
+
+</footer>
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="JS/classes.js"></script>
+<script src="JS/proyectoFinal.js"></script>
+<script src="JS/darkMode.js"></script>
+
+</body>
+</html>

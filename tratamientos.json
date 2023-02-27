@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "nombre": "Limpieza facial profunda",
+        "precio": 3000,
+        "metodo": "Atención manual",
+        "img": "Limpieza facial profunda chica.jpeg"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Peeling invierno o verano",
+        "precio": 4500,
+        "metodo": "Atención manual",
+        "img": "Peeling chica.jpeg"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Hidratacion profunda",
+        "precio": 3500,
+        "metodo": "Atención manual",
+        "img": "Hidrataciòn profunda chica.jpeg"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Shock de luz",
+        "precio": 4000,
+        "metodo": "Atención manual",
+        "img": "Shock de luz chica.jpeg"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Acne",
+        "precio": 3800,
+        "metodo": "Atención manual",
+        "img": "Acne mascara chica.jpeg"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Rosacea/Piel sensible",
+        "precio": 4500,
+        "metodo": "Atención manual",
+        "img": "Tto piel sensible chica.jpeg"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Antiage",
+        "precio": 4800,
+        "metodo": "Aparatologia",
+        "img": "Antiage despues chica.jpeg"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Microneedling",
+        "precio": 4200,
+        "metodo": "Aparatologia",
+        "img": "Dermapen chica.jpeg"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Despigmentacion/Manchas",
+        "precio": 4700,
+        "metodo": "Aparatologia",
+        "img": "Despignmentacion chica.jpeg"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Dermaplaning",
+        "precio": 4600,
+        "metodo": "Atención manual",
+        "img": "Dermaplaning chica.jpeg"
+    },
+
+    {
+        "id": 11,
+        "nombre": "Cabina Led",
+        "precio": 5000,
+        "metodo": "Aparatologia",
+        "img": "Cabina led chica.jpeg"
+    },
+
+    {
+        "id": 12,
+        "nombre": "Ozonoterapia",
+        "precio": 4900,
+        "metodo": "Aparatologia",
+        "img": "Ozonoterapia chica.jpeg"
+    }
+
+]

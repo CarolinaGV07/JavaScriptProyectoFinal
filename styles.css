@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #c83cde;
+}
+
+/*index*/
+header {
+    height: 500px;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #d610b8;
+}
+
+.titlename {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Verdana";
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "Verdana";
+}
+
+.imgcard {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.darkMode{
+    color: white;
+    background-color: black;
+}
+
+.darkMode .card{
+    color: black
+}
+
+.whiteDate{
+    color: white;
+}
+
+.whiteFont{
+    color: white;
+}
+
+#btncolor{
+    background-color: #c83cde;
+}
+
+.fontOffer{
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.blackFont{
+    color: black;
+    font-weight: bold;
+}
+
+.mainindex {
+    height: 1700px;
+  }
+
+
+footer {
+    font-size: 18px;
+    height: 250px;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "p2  ." "p3  f" "p4  i" "p5  p";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#pfooter {
+    color: white;
+    font-family: "Verdana";
+    grid-area: p;
+    font-style: italic;
+  }
+  
+  #p2footer {
+    grid-area: p2;
+    color: white;
+    font-family: "Verdana";
+  }
+  
+  #p3footer {
+    grid-area: p3;
+    color: white;
+    font-family: "Verdana";
+  }
+  
+  #p4footer {
+    grid-area: p4;
+    color: white;
+    font-family: "Verdana";
+  }
+  
+  #p5footer {
+    grid-area: p5;
+    color: white;
+    font-family: "Verdana";
+  }
+
+ footer {
+    background-color: #d610b8;
+    display: grid;
+    width: auto;
+  }
+  
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .faceicon {
+    grid-area: f;
+  }
+  
+  .igicon {
+    grid-area: i;
+  }
+
+  #whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .button{
+    border: #d610b8;
+  }
