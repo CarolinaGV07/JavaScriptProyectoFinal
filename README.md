@@ -34,8 +34,8 @@ En primer lugar fui creando el html en base a la idea que surgió en el sitio we
  - Por supuesto los eventos estan logrados a traves de la captura con DOM de las etiquetas HTML.
  - El loader contempla la funcionalidad de un setInterval que mejora la experiencia de usuario, mientras éste logra visualizar la carga de las cards de los tratamientos. Del mismo modo, esta función 
  consigue mostrar la hora actual, arriba a la izquierda ya mencionada anteriormente.
- - El proyecto cuenta con la carpeta de modulos en la que se han incluido Bootstrap, Animate.css, Luxon y Sweet Alert, con los que además de lograr funcionalidad, aporté estilos que compatibilice 
- con los propios dados con CSS, también para la confección del header y el footer.
+ - El proyecto cuenta con la carpeta de modulos en la que se han incluido Bootstrap, Animate.css, Luxon y Sweet Alert, con los que además de lograr funcionalidad, aporté estilos que compatibilice con los propios dados con CSS, también para la confección del header y el footer. 
+ - Llevé a cabo el consumo de un archivo .json que posee en este caso los objetos instanciados para el array de tratamientos, a través de la sentencia Await combinada con la asincronicidad que le aporta Async a la función que posee el metodo fetch.
  - 📢 Opinion propia: muy contenta con los resultados obtenidos y agradecida ❤️ por todo lo aprendido en este proceso que tan pronto pasó. Y a decir verdad, así como enumero lo hecho, me gustaría también 
  plasmar lo no logrado (aunque intentado con asiduidad):
  - Tenía un gradiente para el fondo de la SPA que al incluirlo, me inutilizaba el dark mode. Nunca logre que sean compatibles y por eso recurri a un fondo simple con un solo color.
