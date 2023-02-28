@@ -38,10 +38,9 @@ En primer lugar fui creando el html en base a la idea que surgió en el sitio we
  - Llevé a cabo el consumo de un archivo .json que posee en este caso los objetos instanciados para el array de tratamientos, a través de la sentencia Await combinada con la asincronicidad que le aporta Async a la función que posee el metodo fetch.
  - 📢 Opinion propia: muy contenta con los resultados obtenidos y agradecida ❤️ por todo lo aprendido en este proceso que tan pronto pasó. Y a decir verdad, así como enumero lo hecho, me gustaría también 
  plasmar lo no logrado (aunque intentado con asiduidad):
- - Tenía un gradiente para el fondo de la SPA que al incluirlo, me inutilizaba el dark mode. Nunca logre que sean compatibles y por eso recurri a un fondo simple con un solo color.
- - Intente cambiarle el color con una clase de css a un boton hecho con bootstrap que tiene un evento, pero cuando figuraba con mi color elegido, el evento no funcionaba (por eso quedaron en verde los 
- botones de aceptacion de los modal y los alert (yo los queria en violeta y por eso recurri al violeta para los botones de cierre).
- - No pude usar el value del input Nombre (modal registro) para que en el sweet alert aparezca el nombre de la persona que solicita el registro y se lo felicite con nombre incluido.
+ - Tenía un gradiente para el fondo de la SPA en el "LightMode", pero al incluirlo, me inutilizaba el DarkMode. Nunca logre que sean compatibles y por eso recurri a un fondo simple con un solo color para cuando el dark mode esta desactivado. 
+ - Intente cambiarle el color con una clase de css a un boton hecho con bootstrap que tiene un evento, pero cuando figuraba con mi color elegido, el evento no funcionaba (por eso quedaron en verde los botones de aceptacion de los modal y los alert (yo los queria en violeta, y por eso recurri al violeta para los botones de cierre).
+ - No pude usar el value del input Nombre (modal registro) para que en el sweet alert aparezca el nombre de la persona que solicita el registro y se lo felicite con nombre incluido. No se si es porque al querer usar el value de un input en un sweet alert se hace de otra forma, pero no descubri el por que de que no funcione.
  - Los iconos del footer (Facebook e Instagram) y el icono del fixed (Whatsapp) no son los mejores a causa de no encontrar png que funcionen como deberían (algun dia los encontrare), pero sí posee cada uno la ruta absoluta hacia el sitio web, que no lo habia mencionado antes.
  - De ser posible encontrar soluciones a estos 4 problemitas, desde ya soy toda a oidos! Gracias Gonza por tu entrega clase a clase! Aguardo tu corrección con ansias!! Buena vida!! Beso grande!!!
 
