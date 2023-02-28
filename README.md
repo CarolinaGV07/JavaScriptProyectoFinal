@@ -18,7 +18,7 @@ En primer lugar fui creando el html en base a la idea que surgió en el sitio we
  - El cuarto botón es un bonus 🎁. Lo llame así para incluir una funcion que me sobraba y no queria descartar, hecha primeramente con prompts y alerts simples, los que reemplace con alertas de la librería 
  Sweet Alert. El boton invoca un modal, donde se solicita colocar en el input del mismo la edad del usuario, a lo cual responde con diferentes opciones un condicional, en el que utilice operadores 
  lógicos para brindar las diferentes variantes de tratamientos disponibles y convenientes segun las franjas de edades estipuladas.
- - La quinta opcion del nav es un botón de registro (sing in) para que el usuario pase a formar parte del sitio con el título de paciente y pueda figurar como tal para el sistema, lo cual intenta 
+ - La quinta opcion del nav es un botón de registro (sing up) para que el usuario pase a formar parte del sitio con el título de paciente y pueda figurar como tal para el sistema, lo cual intenta 
  inducirlo a solicitar los tratamientos ofrecidos. Utilicé nuevamente un modal donde se le pide a traves de inputs que ingrese su nombre completo, su edad y un mail de contacto. Al final un sweet alert lo 
  felicita junto a una imagen de la profesional que la/lo atenderá si adquiere los tratamientos.
  - La sexta y ultima funcionalidad del nav es el carrito de compras, el cual esta conectado a los botones de las cards. En él se pueden ver los tratamientos elegidos por el usuario/paciente 
