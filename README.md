@@ -42,7 +42,7 @@ En primer lugar fui creando el html en base a la idea que surgió en el sitio we
  - Intente cambiarle el color con una clase de css a un boton hecho con bootstrap que tiene un evento, pero cuando figuraba con mi color elegido, el evento no funcionaba (por eso quedaron en verde los 
  botones de aceptacion de los modal y los alert (yo los queria en violeta y por eso recurri al violeta para los botones de cierre).
  - No pude usar el value del input Nombre (modal registro) para que en el sweet alert aparezca el nombre de la persona que solicita el registro y se lo felicite con nombre incluido.
- - Los iconos del footer (Facebook e Instagram) y el icono del fixed (Whatsapp) no son los mejores a causa de no encontrar png que funcionen como deberían.
+ - Los iconos del footer (Facebook e Instagram) y el icono del fixed (Whatsapp) no son los mejores a causa de no encontrar png que funcionen como deberían (algun dia los encontrare), pero sí posee cada uno la ruta absoluta hacia el sitio web, que no lo habia mencionado antes.
  - De ser posible encontrar soluciones a estos 4 problemitas, desde ya soy toda a oidos! Gracias Gonza por tu entrega clase a clase! Aguardo tu corrección con ansias!! Buena vida!! Beso grande!!!
 
  
